@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Christian Marzan | Developer Portfolio</title>
+	<!-- google fonts first-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+	<!-- bootstap css second-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- external CSS third-->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<!-- ctrl + shift + / - allows us to add comments -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio-nav">
+			<!-- navbar = adds extra padding on the navigation
+				navbar-expand-lg = to expand the menu, and not put in a toggle bar (hamburger bar)
+				navbar-dark = makes the bg color dark
+				navbar-toggler = opens and closes the toggle menu
+				type="button" = button used as a BUTTON
+				data-toggle="collapse" = opens and closes the bar menu
+				data-target - to target what div we want to on or off
+			 -->
+			<!-- # = found sign, to refer to an element with and id -->
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+			<div class="collapse navbar-collapse" id="portfolio-nav">
+
+				<!-- collapse = itinatago yung menu kapag nasa smaller screen size
+					navbar-collapse = puts the main menu (details) on the center (hindi sa left or right)
+
+
+				  -->
+
+				<ul class="navbar-nav mx-auto">
+
+				<!-- navbar-nav removes the bullets put on the unordered list 	
+					mx-auto = may automatic space sa left and right
+					ml-auto =  nagkaron ng margin sa left
+					mr-auto = nagkaron ng margin sa right
+				-->
+					<li>
+						<a class="nav-link" href="#landing"> Home </a>
+						<!-- nav-link = makes the text in contrast with the nav bg-->
+					</li>
+					<li>
+						<a class="nav-link" href="#gallery"> Gallery </a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+	<!-- container -->
+	<div class="container-fluid">
+		<section id="landing" class="text-center jumbotron bg-transparent mt-3">
+			<!-- mt = margin top -->
+			<!-- 
+				to add styles from bootsrap, we add specific classes from bootsrap 
+			-->
+			<h1> Christian Sison Marzan </h1>
+			<p> Hi there! I am Christian and I love building something from nothing. </p>
+
+			<img src="./images/marzan_profilepic.jpg" class="img-fluid">
+			<!-- img-fluid = scales down the image that it will not overlap the container -->
+		</section>
+		<!-- end of landing  -->
+		<section id="gallery" class="text-center jumbotron bg-dark text-white">
+			
+			<!-- we can also create our own class and define its style using css -->
+			<div class="tools">
+				<h2> Languages I Speak </h2>
+			<!-- ul is unordered list -->
+				<ul>
+					<li> HTML </li>
+					<li> CSS </li>
+					<li> Java </li>
+				</ul>
+			</div>
+
+			<div class="tools">
+				<h2> Tools I Use </h2>
+				<ul>
+					<!-- cltr + sift + d = copy a line to the next line -->
+					<li> Git Bash </li>
+					<li> Sublime Text </li>
+					<li> Github </li>
+					<li> Google Chrome </li>
+				</ul>
+			</div>
+			
+		</section>
+		<!-- end of gallery -->
+	</div>
+
+	<!-- Bootstrap java script dependencies are placed here before the body ends bcause of load order -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</body>
+</html>
